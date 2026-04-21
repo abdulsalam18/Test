@@ -144,7 +144,7 @@ function butEventHandler(a, b) {
         initGame();
         break;
     case "credits":
-        
+        playSound("click"),
         dp_share();
         break;
     case "backFromCredits":
@@ -162,7 +162,8 @@ function butEventHandler(a, b) {
         break;
     case "moreGames":
     case "moreGamesPause":
-        
+        playSound("click"),
+		window.open('https://www.google.com');
         clickMore(),
         console.log("moreGamesPause");
         break;
